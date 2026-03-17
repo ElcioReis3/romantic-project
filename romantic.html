@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/assets/css/style.css" />
+    <title>Para Você ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ── PETALS ── -->
+    <div id="particles"></div>
+
+    <!-- ══════════════ SCREEN 1 ══════════════ -->
+    <div class="screen" id="screen1">
+      <p class="tagline">Tenho algo especial<br />para você <em>❤️</em></p>
+
+      <div class="big-heart-wrap" id="heartReveal" title="Clique para revelar">
+        <span class="big-heart">🤍</span>
+      </div>
+      <p class="hint" id="hintText">toque no coração</p>
+
+      <div class="password-bubble" id="passwordBubble" style="display: none">
+        <p>sua chave secreta</p>
+        <div class="revealed-pass" id="revealedPass">meiga</div>
+        <hr class="divider" />
+        <label>Digite a senha para entrar</label>
+        <input
+          type="password"
+          id="passInput"
+          placeholder="✦ ✦ ✦ ✦"
+          maxlength="20"
+        />
+        <div class="error" id="passError" style="display: none">
+          Ops, tente de novo 💔
+        </div>
+        <button class="btn-enter" id="btnEnter">Entrar ✨</button>
+      </div>
+    </div>
+
+    <!-- ══════════════ SCREEN 2 ══════════════ -->
+    <div class="screen hidden" id="screen2">
+      <h2>Para você, com amor 🌸❤️</h2>
+      <p class="sub">clique em cada coração</p>
+
+      <div class="hearts-grid" id="heartsGrid"></div>
+    </div>
+
+    <!-- ══════════════ MODAL ══════════════ -->
+    <div class="overlay" id="overlay">
+      <div class="card">
+        <span class="card-heart" id="cardHeart"></span>
+        <p class="card-msg" id="cardMsg"></p>
+        <button class="card-close" id="cardClose">fechar</button>
+      </div>
+    </div>
+
+    <div class="footer">&copy;criado por el***</div>
+
+    <script src="public/assets/js/script.js"></script>
+  </body>
+</html>
