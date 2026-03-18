@@ -375,6 +375,10 @@ body {
   width: 100%;
 }
 
+.footer p {
+  text-align:center;
+}
+
 @keyframes floatUp {
   0% {
     transform: translateY(100vh) scale(0.4);
